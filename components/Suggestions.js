@@ -11,7 +11,7 @@ function Suggestions() {
     return (
         <div className="mt-16 ml-10">
             <div className="flex justify-between text-sm mb-5">
-                <h3 className="text-sm font-bold text-gray-400">Made By</h3>
+                <h3 className="text-sm font-bold text-gray-400">Contact US</h3>
                 <button className="text-gray-600 font-semibold">JIMS Students</button>
             </div>
 

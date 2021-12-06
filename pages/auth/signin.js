@@ -15,7 +15,7 @@ function signin({ providers }) {
             alt=""
             />
         <p className="font-xs italic">
-            -by Jadugars
+            -by Team-1
         </p>
 
         <div className="mt-40">
