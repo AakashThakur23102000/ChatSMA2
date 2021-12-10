@@ -22,9 +22,9 @@ function index() {
 
     if (meme) {
         return(
-        <div style={{textAlign: 'center'}}>
-            <img
-                style={{width: 200}} 
+        <div  style={{textAlign: 'center'}}>
+            <img                
+                style={{width: 400}} 
                 src={meme} 
                 alt="custom meme" />
         </div>
@@ -65,11 +65,13 @@ function index() {
                 {
              templates.map(template => {
                 return(
+                    <div className="centerMeme">
                     <Meme
                         template={template}
                         onClick={() => {
                             setTemplate(template)
                         }} />
+                    </div>
                 )
             })}</>)}
             </div>

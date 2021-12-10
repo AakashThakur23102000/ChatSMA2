@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo3 from "/public/logo_shop.png";
-import {
-    MenuIcon,
-    SearchIcon,
-    ShoppingCartIcon,
-} from "@heroicons/react/outline";
+
 
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter} from "next/router";
@@ -17,7 +13,7 @@ const HeaderS= () => {
     const router = useRouter();
 
     return (
-        <header className="bg-white">
+        <header className="bg-white sticky top-0 z-50">
             {/* top nav */}
             <div className="flex items-center p-1 flex-grow py-2">
                 <div className="mt-2 flex items-center flex-grow sm:flex-grow-0" >
@@ -33,10 +29,13 @@ const HeaderS= () => {
                 </div>
             
             {/* serarch bar */}
-            <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-blue-400 hover:bg-blue-500">
-                <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4" type="text" />
-                <SearchIcon className="h-12 p-4 "/>
+            
+            <div className="hidden place-content-center sm:flex items-center h-10 rounded-md flex-grow space-x-12 cursor-pointer bg-blue-50 hover:bg-blue-100">
+            
+            <p className="cursor-pointer"
+            onClick={() => router.push('/shop')}>Today's Deals</p>
             </div>
+            
             {/* Right */}
             <div className="flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                 <div className=" linkS">
@@ -58,17 +57,7 @@ const HeaderS= () => {
             </div>
 
             </div>
-            {/* bottom nav */}
-            <div className="flex items-center space-x-3 p-2 pl-6 bg-purple-50 text-sm">
-                
-                <p className="linkS">Today's Deals</p>
-                <p className="linkS hidden lg:inline-flex">Electronics</p>
-                <p className="linkS hidden lg:inline-flex">Food & Grocery</p>
-                
-                <p className="linkS hidden lg:inline-flex">Buy Again</p>
-                <p className="linkS hidden lg:inline-flex">Toolkit</p>
-                <p className="linkS hidden lg:inline-flex">Health</p>
-            </div>
+            
             
         </header>
     )

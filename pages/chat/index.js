@@ -36,7 +36,7 @@ const Auth = () => {
       
       <div className="auth-container">
         <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
-          <div className="pb-5 w-full text-center text-white text-2xl">NextJS Chat</div>
+          <div className="pb-5 w-full text-center text-white text-2xl">Enter Credentials to Chat</div>
 
           <div className="input-container">
             <input

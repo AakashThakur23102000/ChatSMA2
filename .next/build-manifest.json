@@ -15,10 +15,10 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
+    "/Meme_Gen": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/Meme_Gen.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -34,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/chat.js"
-    ],
-    "/chat/chats": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/chat/chats.js"
-    ],
-    "/shop": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/shop.js"
     ]
   },
   "ampFirstPages": []
